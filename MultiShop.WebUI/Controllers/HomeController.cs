@@ -18,7 +18,6 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        ViewBag.Test = _productDal.Add();
         return View();
     }
 

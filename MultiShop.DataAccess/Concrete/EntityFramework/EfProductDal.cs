@@ -1,14 +1,12 @@
 ﻿using System;
+using MultiShop.Core.DataAccess.EntityFramework;
 using MultiShop.DataAccess.Abstract;
+using MultiShop.Entities.Concrete;
 
 namespace MultiShop.DataAccess.Concrete.EntityFramework
 {
-    public class EfProductDal : IProductDal
+    public class EfProductDal : EfRepositoryBase<Product, AppDbContext>, IProductDal
     {
-        public string Add()
-        {
-            return "Product added to SQL server";
-        }
     }
 }
 

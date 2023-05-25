@@ -10,10 +10,19 @@
     <None Remove="DataAccess\" />
     <None Remove="DataAccess\MongoDb\" />
     <None Remove="DataAccess\EntityFramework\" />
+    <None Remove="Entities\" />
+    <None Remove="Entities\Abstract\" />
+    <None Remove="Entities\Concrete\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
     <Folder Include="DataAccess\MongoDb\" />
     <Folder Include="DataAccess\EntityFramework\" />
+    <Folder Include="Entities\" />
+    <Folder Include="Entities\Abstract\" />
+    <Folder Include="Entities\Concrete\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
   </ItemGroup>
 </Project>

@@ -32,3 +32,9 @@
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.DataAccess.dll
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.DataAccess.pdb
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/obj/Debug/net7.0/MultiShop.WebUI.csproj.CopyComplete
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/Microsoft.EntityFrameworkCore.Abstractions.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.Entities.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/bin/Debug/net7.0/MultiShop.Entities.pdb

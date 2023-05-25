@@ -1,13 +1,12 @@
 ﻿using MultiShop.DataAccess.Abstract;
 using MultiShop.DataAccess.Concrete.EntityFramework;
-using MultiShop.DataAccess.Concrete.MongoDb;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
 
-builder.Services.AddScoped<IProductDal, MProductDal>();
+builder.Services.AddScoped<IProductDal, EfProductDal>();
 
 
 var app = builder.Build();

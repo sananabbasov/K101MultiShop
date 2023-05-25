@@ -18,4 +18,8 @@
     <Folder Include="Concrete\MongoDb\" />
     <Folder Include="Concrete\EntityFramework\" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\MultiShop.Core\MultiShop.Core.csproj" />
+    <ProjectReference Include="..\MultiShop.Entities\MultiShop.Entities.csproj" />
+  </ItemGroup>
 </Project>

@@ -1,0 +1,12 @@
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/bin/Debug/net7.0/MultiShop.Core.deps.json
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/bin/Debug/net7.0/MultiShop.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/bin/Debug/net7.0/MultiShop.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.csproj.AssemblyReference.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.GeneratedMSBuildEditorConfig.editorconfig
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.AssemblyInfoInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.AssemblyInfo.cs
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.csproj.CoreCompileInputs.cache
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/refint/MultiShop.Core.dll
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/MultiShop.Core.pdb
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Core/obj/Debug/net7.0/ref/MultiShop.Core.dll
