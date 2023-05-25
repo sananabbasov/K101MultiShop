@@ -198,6 +198,20 @@
           "buildTransitive/net6.0/_._": {}
         }
       },
+      "MultiShop.Business/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "MultiShop.DataAccess": "1.0.0",
+          "MultiShop.Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/MultiShop.Business.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/MultiShop.Business.dll": {}
+        }
+      },
       "MultiShop.Core/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -551,6 +565,11 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "MultiShop.Business/1.0.0": {
+      "type": "project",
+      "path": "../MultiShop.Business/MultiShop.Business.csproj",
+      "msbuildProject": "../MultiShop.Business/MultiShop.Business.csproj"
+    },
     "MultiShop.Core/1.0.0": {
       "type": "project",
       "path": "../MultiShop.Core/MultiShop.Core.csproj",
@@ -569,6 +588,7 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "MultiShop.Business >= 1.0.0",
       "MultiShop.DataAccess >= 1.0.0"
     ]
   },
@@ -599,6 +619,9 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Business/MultiShop.Business.csproj": {
+              "projectPath": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.Business/MultiShop.Business.csproj"
+            },
             "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/MultiShop.DataAccess.csproj": {
               "projectPath": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/MultiShop.DataAccess.csproj"
             }

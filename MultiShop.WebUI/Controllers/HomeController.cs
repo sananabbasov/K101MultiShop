@@ -1,5 +1,6 @@
 ﻿using System.Diagnostics;
 using Microsoft.AspNetCore.Mvc;
+using MultiShop.Business.Abstract;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.WebUI.Models;
 
@@ -8,17 +9,18 @@ namespace MultiShop.WebUI.Controllers;
 public class HomeController : Controller
 {
     private readonly ILogger<HomeController> _logger;
-    private readonly IProductDal _productDal;
+    private readonly IProductService _productService;
 
-    public HomeController(ILogger<HomeController> logger, IProductDal productDal)
+    public HomeController(ILogger<HomeController> logger, IProductService productService)
     {
         _logger = logger;
-        _productDal = productDal;
+        _productService = productService;
     }
 
     public IActionResult Index()
     {
-        return View();
+        var products = _productService.GetProducts();
+        return View(products);
     }
 
     public IActionResult Privacy()

@@ -12,5 +12,8 @@
     <ProjectReference Include="..\MultiShop.DataAccess\MultiShop.DataAccess.csproj">
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
+    <ProjectReference Include="..\MultiShop.Business\MultiShop.Business.csproj">
+      <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
+    </ProjectReference>
   </ItemGroup>
 </Project>

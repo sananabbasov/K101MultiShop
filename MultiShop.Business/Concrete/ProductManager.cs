@@ -14,6 +14,13 @@ namespace MultiShop.Business.Concrete
             _productDal = productDal;
         }
 
+        public Product GetProductById(int id)
+        {
+            var product = _productDal.Get(x=>x.Id == id);
+            // alqoritimler
+            return product;
+        }
+
         public List<Product> GetProducts()
         {
             return _productDal.GetAll();
