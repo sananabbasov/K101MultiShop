@@ -12,27 +12,40 @@ namespace MultiShop.Core.DataAccess.EntityFramework
     {
         public void Add(TEntity entity)
         {
-            throw new NotImplementedException();
+            using var context = new TContext();
+            var addEntity = context.Entry(entity);
+            addEntity.State = EntityState.Added;
+            context.SaveChanges();
         }
 
         public void Delete(TEntity entity)
         {
-            throw new NotImplementedException();
+            using var context = new TContext();
+            var removeEntity = context.Remove(entity);
+            removeEntity.State = EntityState.Deleted;
+            context.SaveChanges();
         }
 
         public TEntity Get(Expression<Func<TEntity, bool>> filter)
         {
-            throw new NotImplementedException();
+            using var context = new TContext();
+            return context.Set<TEntity>().SingleOrDefault(filter);
         }
 
-        public List<TEntity> GetAll(Expression<Func<TEntity, bool>> filter)
+        public List<TEntity> GetAll(Expression<Func<TEntity, bool>>? filter = null)
         {
-            throw new NotImplementedException();
+            using var context = new TContext();
+            return filter != null
+                ? context.Set<TEntity>().Where(filter).ToList()
+                : context.Set<TEntity>().ToList();
         }
 
         public void Update(TEntity entity)
         {
-            throw new NotImplementedException();
+            using var context = new TContext();
+            var updateEntity = context.Update(entity);
+            updateEntity.State = EntityState.Modified;
+            context.SaveChanges();
         }
     }
 }

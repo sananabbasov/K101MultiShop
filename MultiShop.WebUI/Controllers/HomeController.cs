@@ -2,6 +2,7 @@
 using Microsoft.AspNetCore.Mvc;
 using MultiShop.Business.Abstract;
 using MultiShop.DataAccess.Abstract;
+using MultiShop.Entities.Concrete;
 using MultiShop.WebUI.Models;
 
 namespace MultiShop.WebUI.Controllers;

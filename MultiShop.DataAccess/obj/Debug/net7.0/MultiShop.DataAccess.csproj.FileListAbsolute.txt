@@ -15,3 +15,5 @@
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/bin/Debug/net7.0/MultiShop.Core.pdb
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/bin/Debug/net7.0/MultiShop.Entities.pdb
 /Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/obj/Debug/net7.0/MultiShop.DataAccess.csproj.CopyComplete
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/bin/Debug/net7.0/MultiShop.DataAccess.runtimeconfig.json
+/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.DataAccess/obj/Debug/net7.0/MultiShop.DataAccess.genruntimeconfig.cache

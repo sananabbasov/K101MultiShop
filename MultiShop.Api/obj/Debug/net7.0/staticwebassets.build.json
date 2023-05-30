@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "gC8KqBCmRKvPZl6JnhaDJ3/hA0iuFOklrudVsRQ2SII=",
+  "Source": "MultiShop.Api",
+  "BasePath": "_content/MultiShop.Api",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

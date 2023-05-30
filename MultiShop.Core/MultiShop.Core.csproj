@@ -13,6 +13,8 @@
     <None Remove="Entities\" />
     <None Remove="Entities\Abstract\" />
     <None Remove="Entities\Concrete\" />
+    <None Remove="DataAccess\MongoDb\Concrete\" />
+    <None Remove="DataAccess\MongoDb\MongoSettings\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -21,8 +23,11 @@
     <Folder Include="Entities\" />
     <Folder Include="Entities\Abstract\" />
     <Folder Include="Entities\Concrete\" />
+    <Folder Include="DataAccess\MongoDb\Concrete\" />
+    <Folder Include="DataAccess\MongoDb\MongoSettings\" />
   </ItemGroup>
   <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="MongoDB.Driver" Version="2.19.2" />
   </ItemGroup>
 </Project>
