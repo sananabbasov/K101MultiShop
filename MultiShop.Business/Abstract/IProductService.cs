@@ -1,13 +1,14 @@
 ﻿using System;
 using MultiShop.Entities.Concrete;
+using MultiShop.Entities.DTOs;
 
 namespace MultiShop.Business.Abstract
 {
 	public interface IProductService
 	{
 		List<Product> GetProducts();
-		Product GetProductById(int id);
-		void AddProduct(Product product);
+		Product GetProductById(string id);
+		void AddProduct(ProductCreateDTO productCreateDTO);
 	}
 }
 

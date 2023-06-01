@@ -28,7 +28,7 @@ namespace MultiShop.Core.DataAccess.MongoDb.Concrete
 
         public void Add(TDocument entity)
         {
-            throw new NotImplementedException();
+            _collection.InsertOne(entity);
         }
 
         public void Delete(TDocument entity)

@@ -8,11 +8,16 @@
 
   <ItemGroup>
     <None Remove="Concrete\" />
+    <None Remove="DTOs\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
+    <Folder Include="DTOs\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MultiShop.Core\MultiShop.Core.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="MongoDB.Driver.Core" Version="2.19.2" />
   </ItemGroup>
 </Project>
