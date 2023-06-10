@@ -3,6 +3,7 @@ using MultiShop.Business.Abstract;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.Entities.Concrete;
 using MultiShop.Entities.DTOs;
+using MultiShop.Entities.DTOs.ProductDTO;
 
 namespace MultiShop.Business.Concrete
 {
@@ -19,7 +20,7 @@ namespace MultiShop.Business.Concrete
         public void AddProduct(ProductCreateDTO productCreateDTO)
         {
             List<ProductLanguage> productLanguages = new();
-
+            int count = 0;
             foreach (var pl in productCreateDTO.ProductLanguages)
             {
                 ProductLanguage productLanguage = new()
@@ -27,9 +28,10 @@ namespace MultiShop.Business.Concrete
                     Name = pl.Name,
                     Description = pl.Description,
                     SeoUrl = "",
-                    LangCode = pl.LangCode
+                    LangCode = count == 0 ? "Az" : count == 1 ? "Ru" : "En"
                 };
                 productLanguages.Add(productLanguage);
+                count++;
             }
 
             Product product = new()
@@ -48,9 +50,14 @@ namespace MultiShop.Business.Concrete
             _productDal.Add(product);
         }
 
+        public List<ProductDashboardListDTO> GetDashboardProducts(string langcode)
+        {
+            return _productDal.GetProductByLanguage(langcode);
+        }
+
         public Product GetProductById(string id)
         {
-            var product = _productDal.Get(x=>x.Id == id);
+            var product = _productDal.GetById(id);
             return product;
         }
 

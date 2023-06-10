@@ -2,6 +2,7 @@
 using MultiShop.Business.Concrete;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.DataAccess.Concrete.EntityFramework;
+using MultiShop.DataAccess.Concrete.MongoDb;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -14,7 +15,7 @@ builder.Services.AddSwaggerGen();
 
 
 builder.Services.AddScoped<IProductService, ProductManager>();
-builder.Services.AddScoped<IProductDal, EfProductDal>();
+builder.Services.AddScoped<IProductDal, MProductDal>();
 
 
 var app = builder.Build();

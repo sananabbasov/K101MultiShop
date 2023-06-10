@@ -1,12 +1,14 @@
 ﻿using System;
 using System.Linq.Expressions;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MultiShop.Core.DataAccess.MongoDb.MongoSettings;
 using MultiShop.Core.Entities.Abstract;
+using SharpCompress.Common;
 
 namespace MultiShop.Core.DataAccess.MongoDb.Concrete
 {
-    public class MongoRepository<TDocument> : IRepositoryBase<TDocument>
+    public class MongoRepository<TDocument> : IMongoRepository<TDocument>
         where TDocument : class, IEntity
     {
 
@@ -31,24 +33,27 @@ namespace MultiShop.Core.DataAccess.MongoDb.Concrete
             _collection.InsertOne(entity);
         }
 
-        public void Delete(TDocument entity)
+        public void Update(string id, TDocument entity)
         {
-            throw new NotImplementedException();
+            var filter = Builders<TDocument>.Filter.Eq("_id", ObjectId.Parse(id));
+            _collection.ReplaceOne(filter, entity);
         }
 
-        public TDocument Get(Expression<Func<TDocument, bool>> filter)
+        public void Remove(string id)
         {
-            throw new NotImplementedException();
+            var filter = Builders<TDocument>.Filter.Eq("_id", ObjectId.Parse(id));
+            _collection.DeleteOne(filter);
         }
 
-        public List<TDocument> GetAll(Expression<Func<TDocument, bool>>? filter = null)
+        public List<TDocument> GetAll()
         {
-            throw new NotImplementedException();
+            return _collection.Find(FilterDefinition<TDocument>.Empty).ToList();
         }
 
-        public void Update(TDocument entity)
+        public TDocument GetById(string id)
         {
-            throw new NotImplementedException();
+            var filter = Builders<TDocument>.Filter.Eq("_id", ObjectId.Parse(id));
+            return _collection.Find(filter).FirstOrDefault();
         }
     }
 }

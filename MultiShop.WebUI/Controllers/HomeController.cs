@@ -21,41 +21,7 @@ public class HomeController : Controller
 
     public IActionResult Index()
     {
-        List<ProductLanguageDTO> productLanguageDTOs = new();
-
-        ProductLanguageDTO languageAz = new()
-        {
-            Name = "Salam",
-            Description = "Haqqinda",
-            LangCode = "az",
-        };
-
-        ProductLanguageDTO languageEn = new()
-        {
-            Name = "Hello",
-            Description = "About",
-            LangCode = "en",
-        };
-
-
-        productLanguageDTOs.Add(languageAz);
-        productLanguageDTOs.Add(languageEn);
-
-        ProductCreateDTO productCreateDTO = new()
-        {
-            ProductLanguages = productLanguageDTOs,
-            Categories = new List<string>() { "Test 1", "Test 2"},
-            PhotoUrl = new List<string>() { "img1.png", "img2.png" },
-            Discount = 10,
-            Price = 100,
-            DiscountEndDate = DateTime.Now
-        };
-
-
-        _productService.AddProduct(productCreateDTO);
-
-
-
+        
         return View();
     }
 

@@ -16,4 +16,30 @@
       <GlobalPropertiesToRemove></GlobalPropertiesToRemove>
     </ProjectReference>
   </ItemGroup>
+  <ItemGroup>
+    <None Remove="Areas\" />
+    <None Remove="Areas\Dahsboard\" />
+    <None Remove="Areas\Dashboard\Controllers\" />
+    <None Remove="Areas\Dashboard\Views\" />
+    <None Remove="Areas\Dashboard\Views\Shared\" />
+    <None Remove="Areas\Dashboard\Views\Home\" />
+    <None Remove="Areas\Dashboard\Views\Category\" />
+    <None Remove="Areas\Dashboard\Views\Product\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Areas\" />
+    <Folder Include="Areas\Dashboard\" />
+    <Folder Include="Areas\Dashboard\Controllers\" />
+    <Folder Include="Areas\Dashboard\Views\" />
+    <Folder Include="Areas\Dashboard\Views\Shared\" />
+    <Folder Include="Areas\Dashboard\Views\Home\" />
+    <Folder Include="wwwroot\admin\" />
+    <Folder Include="Areas\Dashboard\Views\Category\" />
+    <Folder Include="Areas\Dashboard\Views\Product\" />
+    <Folder Include="wwwroot\uploads\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Remove="wwwroot\admin\" />
+    <Content Remove="wwwroot\uploads\" />
+  </ItemGroup>
 </Project>

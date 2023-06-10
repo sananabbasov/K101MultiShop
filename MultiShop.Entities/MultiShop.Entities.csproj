@@ -9,10 +9,14 @@
   <ItemGroup>
     <None Remove="Concrete\" />
     <None Remove="DTOs\" />
+    <None Remove="DTOs\ProductDTO\" />
+    <None Remove="DTOs\CategoryDTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
     <Folder Include="DTOs\" />
+    <Folder Include="DTOs\ProductDTO\" />
+    <Folder Include="DTOs\CategoryDTO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MultiShop.Core\MultiShop.Core.csproj" />

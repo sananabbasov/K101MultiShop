@@ -1,15 +1,38 @@
 ﻿using System;
+using MongoDB.Driver;
 using MultiShop.Core.DataAccess.MongoDb.Concrete;
 using MultiShop.Core.DataAccess.MongoDb.MongoSettings;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.Entities.Concrete;
+using MultiShop.Entities.DTOs.ProductDTO;
 
 namespace MultiShop.DataAccess.Concrete.MongoDb
 {
     public class MProductDal : MongoRepository<Product>, IProductDal
     {
-        public MProductDal(IDatabaseSettings databaseSettings) : base(databaseSettings)
+        private readonly IMongoCollection<Product> _collection;
+        private readonly ICategoryDal _categoryDal;
+        public MProductDal(IDatabaseSettings databaseSettings, ICategoryDal categoryDal) : base(databaseSettings)
         {
+            var database = new MongoClient(databaseSettings.ConnectionString).GetDatabase(databaseSettings.DatabaseName);
+            _collection = database.GetCollection<Product>("products");
+            _categoryDal = categoryDal;
+        }
+
+        public List<ProductDashboardListDTO> GetProductByLanguage(string langcode)
+        {
+            var product = _collection.Find(FilterDefinition<Product>.Empty).ToList();
+            var result = product.Select(x => new ProductDashboardListDTO
+            {
+                Id = x.Id,
+                Name = x.ProductLanguages.FirstOrDefault(z=>z.LangCode == langcode).Name,
+                PhotoUrl = x.PhotoUrl,
+                Price = x.Price,
+                IsActive = x.IsActive,
+                IsDeleted = x.IsDeleted,
+                Categories = _categoryDal.GetCategoriesByLanguage(langcode, x.Categories)
+            }).ToList();
+            return result;
         }
     }
 }

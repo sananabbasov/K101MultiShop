@@ -18,6 +18,12 @@ builder.Services.AddScoped<IProductService, ProductManager>();
 builder.Services.AddScoped<IProductDal, MProductDal>();
 
 
+
+builder.Services.AddScoped<ICategoryService, CategoryManager>();
+builder.Services.AddScoped<ICategoryDal, MCategoryDal>();
+
+
+
 builder.Services.AddScoped<IDatabaseSettings, DatabaseSettings>(sp =>
 {
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
@@ -40,6 +46,15 @@ app.UseStaticFiles();
 app.UseRouting();
 
 app.UseAuthorization();
+
+app.UseEndpoints(endpoint =>
+{
+    endpoint.MapControllerRoute(
+        name: "areas",
+        pattern: "{area:exists}/{controller=Home}/{action=Index}/{id?}"
+        );
+});
+
 
 app.MapControllerRoute(
     name: "default",
