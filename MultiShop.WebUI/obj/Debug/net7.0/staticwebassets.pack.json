@@ -7341,12 +7341,28 @@
       "PackagePath": "staticwebassets/uploads/033e2933-9588-4d31-a6be-dd87a560211824234234234.jpeg"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/125820a3-fcde-41f8-bb46-4a715e64581724234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/125820a3-fcde-41f8-bb46-4a715e64581724234234234.jpeg"
+    },
+    {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/27bd43bd-6085-42e6-a775-c4a1e72c761724234234234.jpeg",
       "PackagePath": "staticwebassets/uploads/27bd43bd-6085-42e6-a775-c4a1e72c761724234234234.jpeg"
     },
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/322bd5ff-7020-47e0-be98-79638266ed2655192261.jpeg",
       "PackagePath": "staticwebassets/uploads/322bd5ff-7020-47e0-be98-79638266ed2655192261.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/3e1cbe10-cf72-41a1-b2f1-fdea5080437724234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/3e1cbe10-cf72-41a1-b2f1-fdea5080437724234234234.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/431409c6-566b-462a-afda-baede470abdc55192261.jpeg",
+      "PackagePath": "staticwebassets/uploads/431409c6-566b-462a-afda-baede470abdc55192261.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/586d8a8f-9c1c-4a6e-a4e5-a66b7014bf22234234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/586d8a8f-9c1c-4a6e-a4e5-a66b7014bf22234234234234.jpeg"
     },
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/7fe038cb-4a40-48d2-8b05-6cfe14f48aff55192261.jpeg",
@@ -7371,6 +7387,226 @@
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/ab0fe0e1-320a-4e97-b51b-51390db8893355192261.jpeg",
       "PackagePath": "staticwebassets/uploads/ab0fe0e1-320a-4e97-b51b-51390db8893355192261.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/c3ce7f7a-1e35-4dde-9285-1016d56b6c9524234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/c3ce7f7a-1e35-4dde-9285-1016d56b6c9524234234234.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap-grid.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap-grid.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap-grid.min.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap-grid.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap-reboot.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap-reboot.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap-reboot.min.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap-reboot.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap.min.css",
+      "PackagePath": "staticwebassets/vendors/css/bootstrap.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/style.css",
+      "PackagePath": "staticwebassets/vendors/css/style.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/style.min.css",
+      "PackagePath": "staticwebassets/vendors/css/style.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/carousel-1.jpg",
+      "PackagePath": "staticwebassets/vendors/img/carousel-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/carousel-2.jpg",
+      "PackagePath": "staticwebassets/vendors/img/carousel-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/carousel-3.jpg",
+      "PackagePath": "staticwebassets/vendors/img/carousel-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/cat-1.jpg",
+      "PackagePath": "staticwebassets/vendors/img/cat-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/cat-2.jpg",
+      "PackagePath": "staticwebassets/vendors/img/cat-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/cat-3.jpg",
+      "PackagePath": "staticwebassets/vendors/img/cat-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/cat-4.jpg",
+      "PackagePath": "staticwebassets/vendors/img/cat-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/offer-1.jpg",
+      "PackagePath": "staticwebassets/vendors/img/offer-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/offer-2.jpg",
+      "PackagePath": "staticwebassets/vendors/img/offer-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/payments.png",
+      "PackagePath": "staticwebassets/vendors/img/payments.png"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-1.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-2.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-3.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-4.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-5.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-5.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-6.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-6.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-7.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-7.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-8.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-8.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/product-9.jpg",
+      "PackagePath": "staticwebassets/vendors/img/product-9.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/user.jpg",
+      "PackagePath": "staticwebassets/vendors/img/user.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-1.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-1.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-2.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-2.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-3.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-3.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-4.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-4.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-5.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-5.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-6.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-6.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-7.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-7.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/img/vendor-8.jpg",
+      "PackagePath": "staticwebassets/vendors/img/vendor-8.jpg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/js/main.js",
+      "PackagePath": "staticwebassets/vendors/js/main.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/animate/animate.min.css",
+      "PackagePath": "staticwebassets/vendors/lib/animate/animate.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/easing/easing.js",
+      "PackagePath": "staticwebassets/vendors/lib/easing/easing.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/easing/easing.min.js",
+      "PackagePath": "staticwebassets/vendors/lib/easing/easing.min.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/LICENSE",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/ajax-loader.gif",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/ajax-loader.gif"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.carousel.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.carousel.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.carousel.min.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.carousel.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.theme.default.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.theme.default.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.theme.default.min.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.theme.default.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.theme.green.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.theme.green.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.theme.green.min.css",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.theme.green.min.css"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/assets/owl.video.play.png",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/assets/owl.video.play.png"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/owl.carousel.js",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/owl.carousel.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/lib/owlcarousel/owl.carousel.min.js",
+      "PackagePath": "staticwebassets/vendors/lib/owlcarousel/owl.carousel.min.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/mail/.DS_Store",
+      "PackagePath": "staticwebassets/vendors/mail/.DS_Store"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/mail/contact.js",
+      "PackagePath": "staticwebassets/vendors/mail/contact.js"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/mail/jqBootstrapValidation.min.js",
+      "PackagePath": "staticwebassets/vendors/mail/jqBootstrapValidation.min.js"
     },
     {
       "Id": "obj/Debug/net7.0/staticwebassets/msbuild.MultiShop.WebUI.Microsoft.AspNetCore.StaticWebAssets.props",

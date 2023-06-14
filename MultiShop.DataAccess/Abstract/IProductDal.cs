@@ -9,6 +9,8 @@ namespace MultiShop.DataAccess.Abstract
 	public interface IProductDal : IMongoRepository<Product>
 	{
 		List<ProductDashboardListDTO> GetProductByLanguage(string langcode);
-	}
+        List<RecentProductDTO> RecentProducts(string langcode);
+        List<DiscountProductDTO> DiscountProducts(string langcode);
+    }
 }
 

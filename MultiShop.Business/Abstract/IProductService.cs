@@ -11,6 +11,9 @@ namespace MultiShop.Business.Abstract
 		List<ProductDashboardListDTO> GetDashboardProducts(string langcode);
         Product GetProductById(string id);
 		void AddProduct(ProductCreateDTO productCreateDTO);
-	}
+		void UpdateProduct(string id, Product product);
+		List<RecentProductDTO> RecentProductList(string langcode);
+		List<DiscountProductDTO> DiscountProductList(string langcode);
+    }
 }
 

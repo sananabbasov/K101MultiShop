@@ -11,12 +11,14 @@
     <None Remove="DTOs\" />
     <None Remove="DTOs\ProductDTO\" />
     <None Remove="DTOs\CategoryDTO\" />
+    <None Remove="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
     <Folder Include="DTOs\" />
     <Folder Include="DTOs\ProductDTO\" />
     <Folder Include="DTOs\CategoryDTO\" />
+    <Folder Include="ViewModels\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MultiShop.Core\MultiShop.Core.csproj" />

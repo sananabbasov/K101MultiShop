@@ -50,6 +50,11 @@ namespace MultiShop.Business.Concrete
             _productDal.Add(product);
         }
 
+        public List<DiscountProductDTO> DiscountProductList(string langcode)
+        {
+            return _productDal.DiscountProducts(langcode);
+        }
+
         public List<ProductDashboardListDTO> GetDashboardProducts(string langcode)
         {
             return _productDal.GetProductByLanguage(langcode);
@@ -64,6 +69,21 @@ namespace MultiShop.Business.Concrete
         public List<Product> GetProducts()
         {
             return _productDal.GetAll();
+        }
+
+        public List<RecentProductDTO> RecentProductList(string langcode)
+        {
+            return _productDal.RecentProducts(langcode);
+        }
+
+        public void UpdateProduct(string id,Product product)
+        {
+            for (int i = 0; i < product.ProductLanguages.Count; i++)
+            {
+                product.ProductLanguages[i].LangCode = i == 0 ? "Az" : i == 1 ? "Ru" : "En";
+            }
+
+            _productDal.Update(id,product);
         }
     }
 }

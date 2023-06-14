@@ -37,9 +37,11 @@
     <Folder Include="Areas\Dashboard\Views\Category\" />
     <Folder Include="Areas\Dashboard\Views\Product\" />
     <Folder Include="wwwroot\uploads\" />
+    <Folder Include="wwwroot\vendors\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />
     <Content Remove="wwwroot\uploads\" />
+    <Content Remove="wwwroot\vendors\" />
   </ItemGroup>
 </Project>

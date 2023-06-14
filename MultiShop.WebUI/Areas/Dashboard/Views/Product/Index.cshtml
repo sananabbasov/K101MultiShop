@@ -34,13 +34,13 @@
                     {
                         <tr>
                             <td>
-                                <img src="@product.PhotoUrl" width="150" height="150" />
+                                <img src="@product.PhotoUrl[0]" width="150" height="150" />
                             </td>
                             <td>@product.Name</td>
                             <td>
-                                <a class="btn btn-success" href="/dashboard/article/edit/@product.Id">Edit</a>
-                                <a class="btn btn-primary" href="/dashboard/article/detail/@product.Id">Detail</a>
-                                <a class="btn btn-danger" href="/dashboard/article/delete/@product.Id">Delete</a>
+                                <a class="btn btn-success" href="/dashboard/product/edit/@product.Id">Edit</a>
+                                <a class="btn btn-primary" href="/dashboard/product/detail/@product.Id">Detail</a>
+                                <a class="btn btn-danger" href="/dashboard/product/delete/@product.Id">Delete</a>
                             </td>
                         </tr>
                     }

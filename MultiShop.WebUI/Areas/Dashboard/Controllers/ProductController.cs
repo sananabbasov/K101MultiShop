@@ -5,6 +5,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using MultiShop.Business.Abstract;
+using MultiShop.Entities.Concrete;
 using MultiShop.Entities.DTOs;
 
 // For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
@@ -64,6 +65,39 @@ namespace MultiShop.WebUI.Areas.Dashboard.Controllers
                 return View(productCreate);
             }
         }
+
+
+
+        public IActionResult Edit(string id)
+        {
+            var products = _productService.GetProductById(id);
+            var categories = _categoryService.GetCategoriesByLanguage("Az");
+            ViewBag.Category = new SelectList(categories, "Id", "Name");
+            return View(products);
+        }
+
+        [HttpPost]
+        public IActionResult Edit(string id,Product product, List<string> categories, List<IFormFile> Photos)
+        {
+            List<string> photoList = new();
+            for (int i = 0; i < Photos.Count; i++)
+            {
+                var path = "/uploads/" + Guid.NewGuid() + Photos[i].FileName;
+                using (var fileStream = new FileStream(_env.WebRootPath + path, FileMode.Create))
+                {
+                    Photos[i].CopyTo(fileStream);
+                }
+                photoList.Add(path);
+            }
+
+            product.PhotoUrl = photoList;
+            product.UpdatedDate = DateTime.Now;
+            product.Categories = categories;
+            _productService.UpdateProduct(id, product);
+            return RedirectToAction("Index");
+        }
+
+
     }
 }
 
