@@ -1,4 +1,5 @@
 ﻿using System;
+using MongoDB.Bson;
 using MongoDB.Driver;
 using MultiShop.Core.DataAccess.MongoDb.Concrete;
 using MultiShop.Core.DataAccess.MongoDb.MongoSettings;
@@ -34,6 +35,24 @@ namespace MultiShop.DataAccess.Concrete.MongoDb
                 Categories = _categoryDal.GetCategoriesByLanguage(langcode, x.Categories)
             }).Where(x=>x.Discount > 0).OrderByDescending(x => x.Id).ToList();
             return result;
+        }
+
+        public ProductDetailDTO GetProductById(string langcode, string id)
+        {
+            var filter = Builders<Product>.Filter.Eq("_id", ObjectId.Parse(id));
+            var product = _collection.Find(filter).FirstOrDefault();
+            ProductDetailDTO productDetail = new()
+            {
+                Id = product.Id,
+                Name = product.ProductLanguages.FirstOrDefault(x => x.LangCode == langcode).Name,
+                Description = product.ProductLanguages.FirstOrDefault(x=>x.LangCode == langcode).Description,
+                PhotoUrl= product.PhotoUrl,
+                Price = product.Price,
+                Discount = product.Discount
+            };
+
+
+            return productDetail;
         }
 
         public List<ProductDashboardListDTO> GetProductByLanguage(string langcode)

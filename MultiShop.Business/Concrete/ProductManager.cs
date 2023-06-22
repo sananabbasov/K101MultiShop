@@ -3,6 +3,7 @@ using MultiShop.Business.Abstract;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.Entities.Concrete;
 using MultiShop.Entities.DTOs;
+using MultiShop.Entities.DTOs.CartDTO;
 using MultiShop.Entities.DTOs.ProductDTO;
 
 namespace MultiShop.Business.Concrete
@@ -66,9 +67,38 @@ namespace MultiShop.Business.Concrete
             return product;
         }
 
+        public ProductDetailDTO GetProductByLangAndId(string langcode, string id)
+        {
+            return _productDal.GetProductById(langcode,id);
+        }
+
         public List<Product> GetProducts()
         {
             return _productDal.GetAll();
+        }
+
+        public List<CartProductDTO> GetProductsById(string langcode, List<string> id, List<int> quantity)
+        {
+            var products = _productDal.GetProductByLanguage(langcode);
+
+            List<CartProductDTO> result = new();
+
+
+            for (int i = 0; i < id.Count; i++)
+            {
+                var findProduct = products.FirstOrDefault(x => x.Id == id[i]);
+                CartProductDTO cartProductDTO = new()
+                {
+                    Id  = findProduct.Id,
+                    Name =  findProduct.Name,
+                    Price = findProduct.Price,
+                    Quantity = quantity[i],
+                    PhotoUrl = findProduct.PhotoUrl[0]
+                };
+
+                result.Add(cartProductDTO);
+            }
+            return result;
         }
 
         public List<RecentProductDTO> RecentProductList(string langcode)

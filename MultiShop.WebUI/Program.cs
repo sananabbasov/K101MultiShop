@@ -1,8 +1,11 @@
-﻿using Microsoft.Extensions.DependencyInjection;
+﻿using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Options;
 using MultiShop.Business.Abstract;
 using MultiShop.Business.Concrete;
 using MultiShop.Core.DataAccess.MongoDb.MongoSettings;
+using MultiShop.Core.Entities.Concrete;
+using MultiShop.Core.Helpers;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.DataAccess.Concrete.EntityFramework;
 using MultiShop.DataAccess.Concrete.MongoDb;
@@ -10,6 +13,8 @@ using MultiShop.DataAccess.Concrete.MongoDb;
 var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<DatabaseSettings>(builder.Configuration.GetSection("DatabaseSettings"));
+
+
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
@@ -22,12 +27,22 @@ builder.Services.AddScoped<IProductDal, MProductDal>();
 builder.Services.AddScoped<ICategoryService, CategoryManager>();
 builder.Services.AddScoped<ICategoryDal, MCategoryDal>();
 
+builder.Services.AddScoped<EmailHelper>();
+
 
 
 builder.Services.AddScoped<IDatabaseSettings, DatabaseSettings>(sp =>
 {
     return sp.GetRequiredService<IOptions<DatabaseSettings>>().Value;
 });
+
+
+builder.Services.AddScoped<AppDbContext>();
+
+
+builder.Services.AddDefaultIdentity<User>().AddRoles<IdentityRole>()
+    .AddEntityFrameworkStores<AppDbContext>();
+
 
 
 var app = builder.Build();
@@ -45,6 +60,7 @@ app.UseStaticFiles();
 
 app.UseRouting();
 
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.UseEndpoints(endpoint =>

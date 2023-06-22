@@ -1,0 +1,10 @@
+﻿@model User
+
+
+<div class="btn-group">
+    <button type="button" class="btn btn-sm btn-light dropdown-toggle" data-toggle="dropdown">@Model.FirstName @Model.LastName</button>
+    <div class="dropdown-menu dropdown-menu-right">
+        <a href="/auth/login" class="dropdown-item">Profile</a>
+        <a href="/auth/logout" class="dropdown-item">Logout</a>
+    </div>
+</div>

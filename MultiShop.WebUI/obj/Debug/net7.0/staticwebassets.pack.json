@@ -7361,8 +7361,16 @@
       "PackagePath": "staticwebassets/uploads/431409c6-566b-462a-afda-baede470abdc55192261.jpeg"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/519698cd-104e-43fa-b5e0-73f6f6c9833724234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/519698cd-104e-43fa-b5e0-73f6f6c9833724234234234.jpeg"
+    },
+    {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/586d8a8f-9c1c-4a6e-a4e5-a66b7014bf22234234234234.jpeg",
       "PackagePath": "staticwebassets/uploads/586d8a8f-9c1c-4a6e-a4e5-a66b7014bf22234234234234.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/6dbcf6a8-177e-451c-8a34-1d153113e34355192261.jpeg",
+      "PackagePath": "staticwebassets/uploads/6dbcf6a8-177e-451c-8a34-1d153113e34355192261.jpeg"
     },
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/7fe038cb-4a40-48d2-8b05-6cfe14f48aff55192261.jpeg",
@@ -7389,8 +7397,16 @@
       "PackagePath": "staticwebassets/uploads/ab0fe0e1-320a-4e97-b51b-51390db8893355192261.jpeg"
     },
     {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/b2526def-c2e2-48d2-b488-8b47ea49075b234234234234.jpeg",
+      "PackagePath": "staticwebassets/uploads/b2526def-c2e2-48d2-b488-8b47ea49075b234234234234.jpeg"
+    },
+    {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/c3ce7f7a-1e35-4dde-9285-1016d56b6c9524234234234.jpeg",
       "PackagePath": "staticwebassets/uploads/c3ce7f7a-1e35-4dde-9285-1016d56b6c9524234234234.jpeg"
+    },
+    {
+      "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/.DS_Store",
+      "PackagePath": "staticwebassets/vendors/.DS_Store"
     },
     {
       "Id": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/vendors/css/bootstrap-grid.css",

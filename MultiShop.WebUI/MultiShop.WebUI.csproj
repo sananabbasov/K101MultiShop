@@ -25,6 +25,12 @@
     <None Remove="Areas\Dashboard\Views\Home\" />
     <None Remove="Areas\Dashboard\Views\Category\" />
     <None Remove="Areas\Dashboard\Views\Product\" />
+    <None Remove="Views\Product\" />
+    <None Remove="Views\Auth\" />
+    <None Remove="ViewComponents\" />
+    <None Remove="Views\Shared\Components\" />
+    <None Remove="Views\Shared\Components\Auth\" />
+    <None Remove="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -38,10 +44,29 @@
     <Folder Include="Areas\Dashboard\Views\Product\" />
     <Folder Include="wwwroot\uploads\" />
     <Folder Include="wwwroot\vendors\" />
+    <Folder Include="Views\Product\" />
+    <Folder Include="Views\Auth\" />
+    <Folder Include="ViewComponents\" />
+    <Folder Include="Views\Shared\Components\" />
+    <Folder Include="Views\Shared\Components\Auths\" />
+    <Folder Include="Views\Cart\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />
     <Content Remove="wwwroot\uploads\" />
     <Content Remove="wwwroot\vendors\" />
+  </ItemGroup>
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="7.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.UI" Version="7.0.7" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="7.0.7">
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 </Project>

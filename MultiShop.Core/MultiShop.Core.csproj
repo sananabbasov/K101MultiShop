@@ -15,6 +15,7 @@
     <None Remove="Entities\Concrete\" />
     <None Remove="DataAccess\MongoDb\Concrete\" />
     <None Remove="DataAccess\MongoDb\MongoSettings\" />
+    <None Remove="Helpers\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="DataAccess\" />
@@ -25,9 +26,12 @@
     <Folder Include="Entities\Concrete\" />
     <Folder Include="DataAccess\MongoDb\Concrete\" />
     <Folder Include="DataAccess\MongoDb\MongoSettings\" />
+    <Folder Include="Helpers\" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.5" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="7.0.7" />
     <PackageReference Include="MongoDB.Driver" Version="2.19.2" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity.EntityFrameworkCore" Version="7.0.7" />
+    <PackageReference Include="Microsoft.AspNetCore.Identity" Version="2.2.0" />
   </ItemGroup>
 </Project>

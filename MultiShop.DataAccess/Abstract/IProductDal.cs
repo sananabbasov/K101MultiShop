@@ -11,6 +11,7 @@ namespace MultiShop.DataAccess.Abstract
 		List<ProductDashboardListDTO> GetProductByLanguage(string langcode);
         List<RecentProductDTO> RecentProducts(string langcode);
         List<DiscountProductDTO> DiscountProducts(string langcode);
+        ProductDetailDTO GetProductById(string langcode, string id);
     }
 }
 
