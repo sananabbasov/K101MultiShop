@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "pB4CIT+77uFSBaN3en1PINZeg+AUUrT50+Jty8dxgD4=",
+  "Hash": "wLc8GMnnlLUQI+QNrZI6hWHMlZeNqL4ai8WY3VmsJ5M=",
   "Source": "MultiShop.WebUI",
   "BasePath": "_content/MultiShop.WebUI",
   "Mode": "Default",
@@ -1086,6 +1086,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/.DS_Store"
+    },
+    {
+      "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/admin/.DS_Store",
+      "SourceId": "MultiShop.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/",
+      "BasePath": "_content/MultiShop.WebUI",
+      "RelativePath": "admin/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/admin/.DS_Store"
     },
     {
       "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/admin/css/sb-admin-2.css",
@@ -32230,6 +32247,23 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot/admin/vendor/jquery/jquery.slim.min.map"
+    },
+    {
+      "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/.DS_Store",
+      "SourceId": "MultiShop.WebUI",
+      "SourceType": "Discovered",
+      "ContentRoot": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/",
+      "BasePath": "_content/MultiShop.WebUI",
+      "RelativePath": "uploads/.DS_Store",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot/uploads/.DS_Store"
     },
     {
       "Identity": "/Users/sanan/Desktop/Projects/Compar Academy/K101/Web/MultiShop/MultiShop.WebUI/wwwroot/uploads/033e2933-9588-4d31-a6be-dd87a560211824234234234.jpeg",

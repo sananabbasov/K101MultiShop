@@ -14,6 +14,8 @@ namespace MultiShop.DataAccess.Concrete.EntityFramework
             builder.UseSqlServer("Server=127.0.0.1,1433;Database=K101Test; User Id=SA; Password=Ehmed123; TrustServerCertificate=True;");
         }
 
+        public DbSet<Order> Orders { get; set; }
+
 
         protected override void OnModelCreating(ModelBuilder builder)
         {

@@ -8,6 +8,7 @@ namespace MultiShop.DataAccess.Abstract
 	public interface ICategoryDal: IMongoRepository<Category>
 	{
 		List<string> GetCategoriesByLanguage(string langcode, List<string> categoryId);
+		List<string> GetCategoriesById(string langcode, List<string> categories);
 	}
 }
 

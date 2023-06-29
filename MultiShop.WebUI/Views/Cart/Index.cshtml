@@ -28,30 +28,34 @@
                     </tr>
                 </thead>
                 <tbody class="align-middle">
-                    @foreach (var cartItem in Model)
+                    @if (Model  != null)
                     {
-                        <tr>
-                            <td class="align-middle"><img src="@cartItem.PhotoUrl" alt="" style="width: 50px;"> Product Name</td>
-                            <td class="align-middle">@cartItem.Price ₼</td>
-                            <td class="align-middle">
-                                <div class="input-group quantity mx-auto" style="width: 100px;">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-minus">
-                                            <i class="fa fa-minus"></i>
-                                        </button>
+                       foreach (var cartItem in Model)
+                        {
+                            <tr>
+                                <td class="align-middle"><img src="@cartItem.PhotoUrl" alt="" style="width: 50px;"> Product Name</td>
+                                <td class="align-middle">@cartItem.Price ₼</td>
+                                <td class="align-middle">
+                                    <div class="input-group quantity mx-auto" style="width: 100px;">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-primary btn-minus">
+                                                <i class="fa fa-minus"></i>
+                                            </button>
+                                        </div>
+                                        <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="@cartItem.Quantity">
+                                        <div class="input-group-btn">
+                                            <button class="btn btn-sm btn-primary btn-plus">
+                                                <i class="fa fa-plus"></i>
+                                            </button>
+                                        </div>
                                     </div>
-                                    <input type="text" class="form-control form-control-sm bg-secondary border-0 text-center" value="@cartItem.Quantity">
-                                    <div class="input-group-btn">
-                                        <button class="btn btn-sm btn-primary btn-plus">
-                                            <i class="fa fa-plus"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </td>
-                            <td class="align-middle">@cartItem.TotalPrice ₼</td>
-                            <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
-                        </tr>
+                                </td>
+                                <td class="align-middle">@cartItem.TotalPrice ₼</td>
+                                <td class="align-middle"><button class="btn btn-sm btn-danger"><i class="fa fa-times"></i></button></td>
+                            </tr>
+                        }
                     }
+
                 </tbody>
             </table>
         </div>
@@ -81,7 +85,7 @@
                         <h5>Total</h5>
                         <h5>$160</h5>
                     </div>
-                    <button class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To Checkout</button>
+                    <a href="/cart/checkout" class="btn btn-block btn-primary font-weight-bold my-3 py-3">Proceed To Checkout</a>
                 </div>
             </div>
         </div>

@@ -56,6 +56,11 @@ namespace MultiShop.Business.Concrete
             return _productDal.DiscountProducts(langcode);
         }
 
+        public List<RecentProductDTO> GetAllFilteredProductList(string langcode, decimal? minPrice, decimal? maxPrice, string? categoryId, bool IsDiscounted, int page = 0)
+        {
+            return _productDal.FilterProducts(langcode, minPrice, maxPrice, categoryId, IsDiscounted,page);
+        }
+
         public List<ProductDashboardListDTO> GetDashboardProducts(string langcode)
         {
             return _productDal.GetProductByLanguage(langcode);

@@ -31,6 +31,7 @@
     <None Remove="Views\Shared\Components\" />
     <None Remove="Views\Shared\Components\Auth\" />
     <None Remove="Views\Cart\" />
+    <None Remove="Views\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\" />
@@ -50,6 +51,7 @@
     <Folder Include="Views\Shared\Components\" />
     <Folder Include="Views\Shared\Components\Auths\" />
     <Folder Include="Views\Cart\" />
+    <Folder Include="Views\Shop\" />
   </ItemGroup>
   <ItemGroup>
     <Content Remove="wwwroot\admin\" />

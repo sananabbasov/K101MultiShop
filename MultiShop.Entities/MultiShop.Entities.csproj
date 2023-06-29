@@ -14,6 +14,7 @@
     <None Remove="ViewModels\" />
     <None Remove="DTOs\UserDTO\" />
     <None Remove="DTOs\CartDTO\" />
+    <None Remove="DTOs\OrderDTO\" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Concrete\" />
@@ -23,6 +24,7 @@
     <Folder Include="ViewModels\" />
     <Folder Include="DTOs\UserDTO\" />
     <Folder Include="DTOs\CartDTO\" />
+    <Folder Include="DTOs\OrderDTO\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\MultiShop.Core\MultiShop.Core.csproj" />

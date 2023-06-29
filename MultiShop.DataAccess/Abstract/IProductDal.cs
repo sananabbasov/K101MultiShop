@@ -10,6 +10,7 @@ namespace MultiShop.DataAccess.Abstract
 	{
 		List<ProductDashboardListDTO> GetProductByLanguage(string langcode);
         List<RecentProductDTO> RecentProducts(string langcode);
+        List<RecentProductDTO> FilterProducts(string langcode, decimal? minPrice, decimal? maxPrice, string? categoryId, bool IsDiscounted, int page);
         List<DiscountProductDTO> DiscountProducts(string langcode);
         ProductDetailDTO GetProductById(string langcode, string id);
     }

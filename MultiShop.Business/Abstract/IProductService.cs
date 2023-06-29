@@ -14,7 +14,8 @@ namespace MultiShop.Business.Abstract
 		void AddProduct(ProductCreateDTO productCreateDTO);
 		void UpdateProduct(string id, Product product);
 		List<RecentProductDTO> RecentProductList(string langcode);
-		List<DiscountProductDTO> DiscountProductList(string langcode);
+		List<RecentProductDTO> GetAllFilteredProductList(string langcode, decimal? minPrice, decimal? maxPrice, string? categoryId, bool IsDiscounted, int page=0);
+        List<DiscountProductDTO> DiscountProductList(string langcode);
 		ProductDetailDTO GetProductByLangAndId(string langcode, string id);
 		List<CartProductDTO> GetProductsById(string langcode, List<string> id, List<int> quantity);
     }

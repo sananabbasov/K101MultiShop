@@ -4,6 +4,7 @@ using MultiShop.Core.DataAccess.MongoDb.Concrete;
 using MultiShop.Core.DataAccess.MongoDb.MongoSettings;
 using MultiShop.DataAccess.Abstract;
 using MultiShop.Entities.Concrete;
+using MultiShop.Entities.DTOs;
 
 namespace MultiShop.DataAccess.Concrete.MongoDb
 {
@@ -15,6 +16,17 @@ namespace MultiShop.DataAccess.Concrete.MongoDb
         {
             var database = new MongoClient(databaseSettings.ConnectionString).GetDatabase(databaseSettings.DatabaseName);
             _collection = database.GetCollection<Category>("categories");
+        }
+
+        public List<string> GetCategoriesById(string langcode, List<string> categoryId)
+        {
+            var categories = _collection.Find(FilterDefinition<Category>.Empty).ToList();
+
+            var result = categories.Where(x => categoryId.Contains(x.Id)).Select(x => new
+            {
+                x.Id
+            }).Select(x => x.ToString()).ToList();
+            return result;
         }
 
         public List<string> GetCategoriesByLanguage(string langcode, List<string> categoryId)

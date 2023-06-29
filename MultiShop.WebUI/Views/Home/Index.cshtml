@@ -300,6 +300,13 @@
                 data: cartItem,
                 success: function (e) {
                     console.log(e)
+                    if (e == "Ok") {
+                        Swal.fire(
+                            'Səbətə əlavə olundu!',
+                            '',
+                            'success'
+                        )
+                    }
                 }
             })
 
